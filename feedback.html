@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lynchburg Cru's Feedback!!!</title>
+        <link rel="stylesheet" href="feedback.style.css">
+        <script src="https://kit.fontawesome.com/ad666b037e.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="feedbackbox">
+
+                <p class="text">How would you rate this Cru Event?</p>
+                <div class="emoji">
+                    <div id="emoji">
+                        <img src="images/lousy.png" >
+                        <img src="images/poor.png">
+                        <img src="images/neutral.png ">
+                        <img src="images/good.png">
+                        <img src="images/Outstanding.png">
+                    </div>
+                    </div>
+                 <div class="rating">
+                    <i class="fa-solid fa-star fa-flip" style="color: #5f5f5a8e;"></i>
+                    <i class="fa-solid fa-star fa-flip" style="color: #5f5f5a8e;"></i>
+                    <i class="fa-solid fa-star fa-flip" style="color: #5f5f5a8e;"></i>
+                    <i class="fa-solid fa-star fa-flip" style="color: #5f5f5a8e;"></i>
+                    <i class="fa-solid fa-star fa-flip" style="color: #5f5f5a8e;"></i>
+                
+                </div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                
+                <textarea class="textarea" cols="75" rows="4" 
+            placeholder="                         
+                         -Respectfully express your opinion!
+                         -What do you think worked out fine 
+                         -What do you think we've could've done better?"></textarea>
+
+                <a href="#" class="btn">Send</a>
+            </div>
+            
+            
+        </div>
+        
+    <script>
+
+var stars = document.getElementsByClassName("fa-solid");
+var emoji = document.getElementById("emoji");
+
+stars[0].onclick = function(){
+    stars[0].style.color = "#ffd93b";
+    stars[1].style.color = "#5f5f5a8e";
+    stars[2].style.color = "#5f5f5a8e";
+    stars[3].style.color = "#5f5f5a8e";
+    stars[4].style.color = "#5f5f5a8e";
+    emoji.style.transform = "translateX(0)";
+}
+stars[1].onclick = function(){
+    stars[0].style.color = "#ffd93b";
+    stars[1].style.color = "#ffd93b";
+    stars[2].style.color = "#5f5f5a8e";
+    stars[3].style.color = "#5f5f5a8e";
+    stars[4].style.color = "#5f5f5a8e";
+    emoji.style.transform = "translateX(-100px)";
+}
+stars[2].onclick = function(){
+    stars[0].style.color = "#ffd93b";
+    stars[1].style.color = "#ffd93b";
+    stars[2].style.color = "#ffd93b";
+    stars[3].style.color = "#5f5f5a8e";
+    stars[4].style.color = "#5f5f5a8e";
+    emoji.style.transform = "translateX(-200px)";
+}
+stars[3].onclick = function(){
+    stars[0].style.color = "#ffd93b";
+    stars[1].style.color = "#ffd93b";
+    stars[2].style.color = "#ffd93b";
+    stars[3].style.color = "#ffd93b";
+    stars[4].style.color = "#5f5f5a8e";
+    emoji.style.transform = "translateX(-300px)";
+}
+stars[4].onclick = function(){
+    stars[0].style.color = "#ffd93b";
+    stars[1].style.color = "#ffd93b";
+    stars[2].style.color = "#ffd93b";
+    stars[3].style.color = "#ffd93b";
+    stars[4].style.color = "#ffd93b";
+    emoji.style.transform = "translateX(-400px)";
+}
+
+    </script>
+
+    
+    </body>
+</html>
